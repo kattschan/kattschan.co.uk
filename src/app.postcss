@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+html {
+    /* Robbed from https://melt-ui.com/ (.dotted-bg) */
+    background: radial-gradient(
+        circle at 1px 1px,
+        theme(colors.violet.950) 2px,
+        theme(colors.violet.900) 0
+    );
+    background-size: 1.5rem 1.5rem;
+    background-repeat: repeat;
+    background-position: 0.5rem center;
+    position: relative;
+}
+}
